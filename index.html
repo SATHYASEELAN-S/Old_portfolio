@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <title>Sathyaseelan Portfolio</title>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+
+  <script src="./js/index.js"></script>
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "AnoKXkPf0cgapiSwu",
+      });
+    })();
+  </script>
+
+
+</head>
+
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-sm ">
+      <div class="container-fluid mt-1">
+        <a class="navbar-brand nav-link ms-sm-5" href="#home" style="font-weight: 700">SATHYA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-xl-8 col-lg-8 col-md-6 justify-content-end"
+          id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a href="#home" class="nav-link  active ">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link ">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home">
+
+    <div class="container-fluid deactive  home-container d-flex w-100 vh-100  ">
+      <div class="home-content d-flex    h-100 w-100 ">
+        <div class=" h-100 col-lg-6 col-12  w-100 ">
+          <div class="col w-100 d-flex  home-text h-100 justify-content-start align-items-center">
+            <div class="ps-sm-5">
+              <div class="text-name">I'm Sathyaseelan </div>
+              <div class="text-role">Full-Stack Developer</div>
+              <div class="text-native">From Erode</div>
+              <a href="https://drive.google.com/file/d/1iTLGgK1yQCOq-YtUjuVbvKk2sjwjcmU4/view?usp=drive_link"
+                class="btn btn-cv">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="col-lg-6 bg-primary d-flex justify-content-center align-items-center ">
+      <svg class="home__blob" width="65%" height="60%" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <mask id="mask0" mask-type="alpha">
+          <path
+            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+        </mask>
+        <g mask="url(#mask0)">
+          <path
+            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+          <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png" />
+        </g>
+      </svg>
+    </div> -->
+
+    </div>
+  </section>
+  <section id="about">
+    <div
+      class="about-container bg-white container-fluid justify-content-center align-items-center d-flex vh-100 w-100  ">
+
+      <div class="about-content mt-5 d-flex justify-content-center align-items-start h-100 " >
+        <div class="row about-row   justify-content-center align-items-start  d-flex ">
+          <div class="row about-text h-25 d-flex align-items-center justify-content-center ">
+            <h1 class="text-center headline col-text">About Me</h1>
+          </div>
+          <div class="row d-flex pt-4  h-100  align-items-start justify-content-center  ">
+            <div class="col-md-5 d-flex justify-content-center  align-items-start">
+              <div class="image" style="width: 18rem; height: auto;">
+                <img class="img img-fluid" src="./assets/profile.jpeg">
+              </div>
+            </div>
+            <div class="col-md-7 about-description d-flex justify-content-center align-items-center "
+              style="flex-direction: column;">
+              <p class="text44 ">I am currently pursuing MCA and am highly motivated and dedicated, with a strong
+                passion
+                for web development and technology. My academic journey has provided me with a solid foundation in
+                computer science principles and proficiency in various programming languages.
+
+                In addition to my coursework, I undertook a Mini Project where I successfully developed a Blog Web
+                application. This experience not only enhanced my coding skills but also allowed me to apply theoretical
+                concepts to real-world scenarios. It further fueled my enthusiasm for creating innovative and
+                user-friendly web solutions.
+
+                I am constantly exploring new technologies and staying updated with industry trends. I believe in the
+                power of continuous learning and enjoy taking up challenges that push my boundaries. I am eager to
+                contribute my skills and knowledge to the ever-evolving field of web development</p>
+
+              <a href="http://16.16.68.62:8000/" class="btn btn-web border-2 ">Try Blog Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class=" ed-container container-fluid vh-100 d-flex justify-content-center align-items-center ">
+      <div class="row  ed-boxs w-75  h-75  d-flex justify-content-center align-items-center  ">
+        <div class="col-text text-center ">
+          <h1 class="headline">Education</h1>
+        </div>
+        <div class="col-12 col-1 col-box d-flex justify-content-end">
+          <div class="col-lg-6  ed-box col-1 col-md-6 col-12 d-flex justify-content-center align-items-center   ">
+            <div class="box  d-flex justify-content-start align-items-start  " style="flex-direction: column;">
+              <div class="row pt-3 ps-3  skil-row  w-100  d-flex align-items-end ">
+                <div class="text-start  col-5">
+                  <h1 class="text-ed">MCA</h1>
+                </div>
+                <div class="col-7 text-end   ">
+                  <p class="text-muted text-ed">2024 (Present)</p>
+                </div>
+              </div>
+              <div class="row pt-0 ps-3  skil-row  w-100  ">
+                <div class="text-start col-12">
+                  <p class="text-ed">M Kumarasamy College of Engineering, Karur</p>
+                </div>
+                <div class="text-start pt-3 col-12">
+                  <p class="text-ed">CGPA: 8.1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-box d-flex justify-content-start ">
+          <div class="col-lg-6  ed-box col-1 col-md-6 col-12 d-flex justify-content-center align-items-center   ">
+            <div class="box  d-flex justify-content-start align-items-start  " style="flex-direction: column;">
+              <div class="row pt-3 ps-3  skil-row  w-100  d-flex align-items-end ">
+                <div class="text-start  col-9">
+                  <h1 class="text-ed">B.Sc. Electronics </h1>
+                </div>
+                <div class="col-3 text-end   ">
+                  <p class="text-muted text-ed">2022</p>
+                </div>
+              </div>
+              <div class="row pt-0 ps-3  skil-row  w-100  ">
+                <div class="text-start col-12">
+                  <p class="text-ed">Erode Arts and Science College, Erode </p>
+                </div>
+                <div class="text-start pt-3 col-12">
+                  <p class="text-ed">Percentage: 85</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-box d-flex justify-content-end">
+          <div class="col-lg-6  ed-box col-1 col-md-6 col-12 d-flex justify-content-center align-items-center   ">
+            <div class="box  d-flex justify-content-start align-items-start  " style="flex-direction: column;">
+              <div class="row pt-3 ps-3  skil-row  w-100  d-flex align-items-end ">
+                <div class="text-start  col-5">
+                  <h1 class="text-ed">HSC</h1>
+                </div>
+                <div class="col-7 text-end   ">
+                  <p class="text-muted text-ed">2019</p>
+                </div>
+              </div>
+              <div class="row pt-0 ps-3  skil-row  w-100  ">
+                <div class="text-start col-12">
+                  <p class="text-ed">Govt.Boys.Hr.Sec.School, Sivagiri</p>
+                </div>
+                <div class="text-start pt-3 col-12">
+                  <p class="text-ed">percentage: 64.3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-box col-4 d-flex justify-content-start">
+          <div class="col-lg-6  ed-box col-1 col-md-6 col-12 d-flex justify-content-center align-items-center   ">
+            <div class="box  d-flex justify-content-start align-items-start  " style="flex-direction: column;">
+              <div class="row pt-3 ps-3  skil-row  w-100  d-flex align-items-end ">
+                <div class="text-start  col-5">
+                  <h1 class="text-ed">SSLC</h1>
+                </div>
+                <div class="col-7 text-end   ">
+                  <p class="text-muted text-ed">2017</p>
+                </div>
+              </div>
+              <div class="row pt-0 ps-3  skil-row  w-100  ">
+                <div class="text-start col-12">
+                  <p class="text-ed">Govt.Boys.Hr.Sec.School, Sivagiri</p>
+                </div>
+                <div class="text-start pt-3 col-12">
+                  <p class="text-ed">Percentage: 90.4</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skill">
+    <div class="container-fluid d-flex justify-content-center align-items-center vh-100 ">
+      <div class="skill-content  d-flex justify-content-center align-items-center  h-75 ">
+        <div class="skill-row w-75  d-flex justify-content-center align-items-center   g-1  row">
+          <div class="col-12  skill text-center ">
+            <h1 class="headline">Skills</h1>
+          </div>
+          <div class="col-row colr-1 row d-flex ">
+            <div class="col-md-6 col-sm-10 col-12">
+              <div class="skill-box bg-white">
+                <div class="skill-text d-flex " style="flex-direction: row;">
+                  <div class="fa mt-2  me-3 ">
+                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                  </div>
+                  <h4 class="text-start ">HTML5</h4>
+                </div>
+                <div class="skill-bar bar1 col-12"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-row colr-2 row d-flex justify-content-end ">
+            <div class="col-md-6 col-sm-10 col-12">
+              <div class="skill-box bg-white">
+                <div class="skill-text d-flex " style="flex-direction: row;">
+                  <div class="fa mt-2  me-3 ">
+                    <i class="fa-brands fa-css3 fa-2xl"></i>
+                  </div>
+                  <h4 class="text-start ">CSS</h4>
+                </div>
+                <div class="skill-bar col-md-9 col-sm-10 col-12 "></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-row colr-3 d-flex justify-content-start row ">
+            <div class="col-md-6 col-sm-10 col-12">
+              <div class="skill-box bg-white">
+                <div class="skill-text d-flex " style="flex-direction: row;">
+                  <div class="fa mt-2  me-3 ">
+                    <i class="fa-brands fa-bootstrap fa-2xl"></i>
+                  </div>
+                  <h4 class="text-start ">Bootstrap</h4>
+                </div>
+                <div class="skill-bar col-10 "></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-row colr-4 row d-flex justify-content-end ">
+            <div class="col-md-6 col-sm-10 col-12">
+              <div class="skill-box bg-white">
+                <div class="skill-text d-flex " style="flex-direction: row;">
+                  <div class="fa mt-2  me-3 ">
+                    <i class="fa-brands fa-python fa-2xl"></i>
+                  </div>
+                  <h4 class="text-start ">Python</h4>
+                </div>
+                <div class="skill-bar col-11 "></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-row colr-5 row d-flex justify-content-start ">
+            <div class="col-md-6 col-sm-10 col-12">
+              <div class="skill-box bg-white">
+                <div class="skill-text d-flex " style="flex-direction: row;">
+                  <div class="fa mt-2  me-3 ">
+                    <i class="fa-solid fa-code fa-2xl"></i>
+
+                  </div>
+                  <h4 class="text-start ">Django</h4>
+                </div>
+                <div class="skill-bar col-10"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-row colr-6 row d-flex justify-content-end ">
+            <div class="col-md-6 col-sm-10 col-12">
+              <div class="skill-box bg-white">
+                <div class="skill-text d-flex " style="flex-direction: row;">
+                  <div class="fa mt-2  me-3 ">
+                    <i class="fa-solid fa-database fa-2xl"></i>
+
+                  </div>
+                  <h4 class="text-start ">SQL</h4>
+                </div>
+                <div class="skill-bar col-10"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container-fluid contact-container vh-100 d-flex justify-content-center align-items-start">
+      <div class="contact-content d-flex w-75 justify-content-center h-75 align-items-start">
+        <div class="row contact-row w-75 d-flex justify-content-center  align-items-start">
+          <div class="contact-col text-center mb-5">
+            <h1 class="headline">Contact</h1>
+          </div>
+          <div class="col-lg-7 col-md-9 col-12">
+            <div class="cla">
+              <input type="text" name="name" id="name" class="form-control border-dark shadow-none mb-3"
+                placeholder="Name" style="padding: 15px;" required>
+              <input type="email" name="email" id="email" class="form-control border-dark shadow-none mb-3"
+                placeholder="Email" style="padding: 15px;" required>
+              <textarea id="message" cols="30" rows="10" placeholder="message"
+                class="border-dark form-control shadow-none mb-3 " required></textarea>
+              <button class="btn btn-submit" onclick="sendMail()">Submit</button>
+              <!-- <input type="submit" name="" id=""> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
