@@ -293,6 +293,14 @@ color: #0E2431;
 .skill-box{
     transition: all 0.4 ease;
 }
+.skill-container{
+    
+    height: auto !important;
+}
+.skill-content{
+    margin-top: 90px;
+    margin-bottom: 50px !important;
+}
 .skill-box:hover{
     background-color: #4070f4 !important;
     .skill-bar{
