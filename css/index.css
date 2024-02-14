@@ -110,7 +110,9 @@ font-weight: 700;
 }
 .btn-cv,.btn-web{
     background-color: hsl(258, 83%, 45%);
-    padding:10px ;
+    padding:5px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 10px;
     color: white;
 
@@ -134,8 +136,8 @@ margin-top: -10px;
 }
 
 .text-native{
-    font-size: 30px;
-font-size: 20px;
+   
+font-size: 22px;
 color: #0E2431;
 
 }
@@ -160,6 +162,7 @@ color: #0E2431;
 .about-content{
     justify-content: center ;
     height: auto;
+    margin-bottom:50px ;
 }
 .about-text{
     margin-bottom: 50px;
@@ -262,7 +265,6 @@ color: #0E2431;
 
 
 /************************************ skill start **************************************** */
-
 .skill-box {
     border-radius: 10px 10px 10px 5px ;
     margin-bottom: 30px;
@@ -273,16 +275,8 @@ color: #0E2431;
     margin-bottom: 50px;
 
 }
-.skill-bar{
-    height: 5px;
-   
-    border-radius: 10px 10px 10px  10px;
-    background-color: #4070f4 ;
-}
 
-.skill-box .bar1{
-    width: 95% !important;
-}
+
 .skill-text {
     padding: 10px 10px 0px 10px;
 }
@@ -301,6 +295,11 @@ color: #0E2431;
     margin-top: 90px;
     margin-bottom: 50px !important;
 }
+
+.skill-row .col-1, .skill-row .col-2 {
+    width: auto !important;
+}
+
 .skill-box:hover{
     background-color: #4070f4 !important;
     .skill-bar{
@@ -313,39 +312,10 @@ color: #0E2431;
         color: white;
     }
 }
-@media (min-width:768px) {
-    .skill-row .colr-1{
-        margin-left: 10%;
-        
-    
-    }
-    .skill-row .colr-2{
-        margin-right: 10%;
-        
-    
-    }
-    .skill-row .colr-3{
-        margin-left: 20%;
-    
-    }
-    .skill-row .colr-4{
-        margin-right: 20%;
-    
-    }
-    .skill-row .colr-5{
-        margin-left: 30%;
-    
-    }
-    .skill-row .colr-6{
-        margin-right: 30%;
-    
-    }
-
-}
 
 @media (max-width:767px)
 {
-    .skill-row .col-row{
+    .skill-row {
         display: flex;
         align-items: center !important;
         justify-content: start;
@@ -372,11 +342,21 @@ color: #0E2431;
 
 
 
+
 /************************************ skill end **************************************** */
 
-.contact-content .headline{
-    margin-top: 100px;
+.contact-content {
+    margin-top: 85px;
+
 }
+
+.contact-container,.contact-content{
+    height: auto !important;
+}
+.contact-content{
+    margin-bottom: 50px;
+}
+
 
 @media (max-width:500px)
 {
