@@ -24,10 +24,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
 
   <script src="./js/index.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
+  <!-- <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+/> -->
 
 </head>
 
@@ -76,43 +79,287 @@
               <div class="text-name">I'm Sathyaseelan </div>
               <div class="text-role">Full-Stack Developer</div>
               <div class="text-native">From Erode</div>
-              <a href="https://drive.google.com/file/d/1Vlc8fMVVH5jqHmJ81xSCjOpFGsL4KCh2/view"
-                
-                class="btn btn-cv">Download CV</a>
+              <a href="#contact"
+                class="btn btn-cv">Contact Me</a>
             </div>
           </div>
         </div>
       </div>
-
-      
-
     </div>
   </section>
-  <section id="about">
+  <section class="about" id="about">
     <div
-      class="about-container bg-white container-fluid justify-content-center align-items-center d-flex vh-100 w-100  ">
+      class="about-container bg-white container-fluid justify-content-center align-items-center d-flex vh-100 w-100  "
+      style="flex-direction: column;">
 
-      <div class="about-content mt-5 d-flex justify-content-center align-items-start h-100 " >
-        <div class="row about-row   justify-content-center align-items-start  d-flex ">
-          <div class="row about-text h-25 d-flex align-items-center justify-content-center ">
-            <h1 class="text-center headline col-text">About Me</h1>
-          </div>
-          <div class="row d-flex pt-4  h-100  align-items-start justify-content-center  ">
-            <div class="col-md-5 d-flex justify-content-center  align-items-start">
-              <div class="image" style="width: 18rem; height: auto;">
-                <img class="img img-fluid" src="./assets/profile.jpeg">
-              </div>
+      <div class="row justify-content-start align-itemsstart d-flex ">
+        <div class="row d-flex align-items-center justify-content-center ">
+          <h1 class="text-center mb-4  headline col-text">About</h1>
+          <div class="row d-flex justify-content-center ">
+            <div class="col d-flex justify-content-end ">
+              <button class="btn-me btn btn-aboutme   active  border-0  about-active shadow-none"
+                data-target="aboutme">About
+                Me</button>
             </div>
-            <div class="col-md-7 about-description d-flex justify-content-center align-items-center "
-              style="flex-direction: column;">
-              <p class="text44 ">
-                I am currently pursuing MCA and am highly motivated and dedicated, with a strong passion for web development and technology. My academic journey has provided me with a solid foundation in computer science principles and proficiency in various programming languages. In addition to my coursework, I undertook a Mini Project where I successfully developed a Blog Web application.</p>
-
-              <a href="http://16.16.68.62:8000/" class="btn btn-web border-2 ">Try Blog Website</a>
+            <div class="col">
+              <button class="btn btn-aboutme border-0 about-active shadow-none" data-target="carousel">About
+                Project</button>
             </div>
           </div>
         </div>
+
+        <div class="about-content d-flex justify-content-center align-items-start h-100 " data-content id="aboutme">
+          <div class="row about-row   justify-content-center align-items-start  d-flex ">
+            <div class="row d-flex pt-4 h-100  align-items-start justify-content-center  ">
+              <div class="col-lg-5 d-flex justify-content-center  align-items-start">
+                <div class="image" style="width: 220px; height: auto;">
+                  <img class="img img-fluid" src="./assets/profile.jpeg">
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-10 about-description d-flex justify-content-center align-items-center "
+                style="flex-direction: column;">
+                <p class="text44 pt-md-3 ">
+                  I am currently pursuing an MCA and am highly motivated and dedicated, with a strong passion for web development and technology, especially in full-stack development. My academic journey has provided me with a solid foundation in computer science principles and proficiency in various programming languages. In addition to my coursework, I have completed a few projects using different programming languages.</p>
+                  <a href="https://drive.google.com/file/d/1Vlc8fMVVH5jqHmJ81xSCjOpFGsL4KCh2/view"
+                  class="btn btn-web">Download CV</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-content id="carousel"
+          class="carousel-content carousel about-content  w-100  d-flex justify-content-center carousel-dark slide"
+          data-bs-touch="true" data-bs-ride="carousel">
+          <div class="carousel-inner w-75">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <div class="row d-flex  justify-content-center align-items-center ">
+                <div class="col-md-6   col-sm-12  p-box col-12 d-flex justify-content-center align-items-center">
+                  <div class=" img-box">
+                    <a href=""  data-bs-toggle="modal" data-bs-target="#blog"> <img src="./assets/blog.png"
+                      class="project-img" style="width:90%; " alt=""></a>
+                   
+                  </div>
+                </div>
+                <div class="col-12  col-sm-12  col-md-6 p-box d-flex justify-content-start align-items-start"
+                  style="flex-direction: column;">
+                  <div class=" col-lg-12 col-sm-10  col-md-10">
+                    <div class="box-project col-lg-10 col-md-10 col-12">
+                      <h5>Blog Site</h5>
+                      <p> This WebApplication provide users to create, publish, and manage their own written content in
+                        the form of articles, blog posts and also have comment functionality for each post.</p>
+                    
+                        <div class="tech-used row d-flex  ">
+                          <div class="col-2" style="width: auto;">
+                            <h6>CSS</h6>
+                          </div>
+                          <div class="col-2" style="width: auto;">
+                            <h6>HTML</h6>
+                          </div>
+                          <div class="col-2" style="width: auto;">
+                            <h6>Bootstrap5</h6>
+                          </div>
+                          <div class="col-2" style="width: auto;">
+                            <h6>Python</h6>
+                          </div>
+                          <div class="col-2" style="width: auto;">
+                            <h6>Django</h6>
+                          </div>
+                          <div class="col-2" style="width: auto;">
+                            <h6>MySQL</h6>
+                          </div>
+                        </div>
+                      </div>
+                    
+                  </div>
+
+                  <div class="modal fade " id="blog" data-bs-backdrop="static" data-bs-keyboard="false"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content  ">
+                        <div class="row mt-2 ms-2  ">
+                          <div class="col-10">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Blog WebApplication</h1>
+                          </div>
+                          <div class="col-2">
+                            <button type="button" class="btn-close   me-2" data-bs-dismiss="modal" aria-label="Close"
+                              style="float: right;"></button>
+                          </div>
+
+                        </div>
+                        <div class="modal-body row d-flex justify-content-center align-items-center ">
+
+                          <div class="col-sm-6 col-12 d-flex justify-content-center align-items-center ">
+                            <a href="https://github.com/SATHYASEELAN-S/Django-blog-webapplication" class="btn btn-repo p-4 "><i
+                                class="fa-brands fa-square-github fa-bounce me-1 fa-2xl"></i> Githb Repo</a>
+                          </div>
+                          <div class="col-sm-6 col-12 d-flex justify-content-center align-items-center ">
+                            <a href="http://16.16.68.62:8000/" class="btn btn-repo p-4"><i class="fa-solid fa-circle fa-beat me-1 fa-2xl"></i>
+                              Live link</a>
+                          </div>  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <div class="row">
+                <div class="col-md-6 col-sm-12 p-box col-12 d-flex justify-content-center align-items-center">
+                  <div class="img-box">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#guvi" ><img src="./assets/GUVI.png" class="project-img "
+                      style="width:90%; " alt=""></a>
+                    
+                    <div class="modal fade " id="guvi" data-bs-backdrop="static" data-bs-keyboard="false"
+                      aria-labelledby="guvi" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content  ">
+                          <div class="row mt-2 ms-2  ">
+                            <div class="col-10">
+                              <h1 class="modal-title fs-5" id="staticBackdropLabel">Guvi Login</h1>
+                            </div>
+                            <div class="col-2">
+                              <button type="button" class="btn-close   me-2" data-bs-dismiss="modal" aria-label="Close"
+                                style="float: right;"></button>
+                            </div>
+                          </div>
+                          <div class="modal-body row d-flex justify-content-center align-items-center ">
+                            <div class="col-12 d-flex justify-content-center align-items-center ">
+                              <a href="https://github.com/SATHYASEELAN-S/guviTask" class="btn btn-repo p-4 "><i
+                                  class="fa-brands fa-square-github fa-bounce me-1 fa-2xl"></i> Githb Repo</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-sm-12 p-box d-flex justify-content-start align-items-start"
+                  style="flex-direction: column;">
+                  <div class="box-project col-lg-10 col-sm-10 col-md-10 col-12">
+                    <h5>GUVI Login</h5>
+                    <p> A responsive login page using jQuery, Ajax. Bootstrap5 used for styling. After logging in there
+                      is an entire profile page you can fill in and update.</p>
+                      <div class="tech-used row d-flex  ">
+                        <div class="col-2" style="width: auto;">
+                          <h6>CSS</h6>
+                        </div>
+                        <div class="col-2" style="width: auto;">
+                          <h6>HTML</h6>
+                        </div>
+                        <div class="col-2" style="width: auto;">
+                          <h6>Bootstrap5</h6>
+                        </div>
+                        <div class="col-2" style="width: auto;">
+                          <h6>MongoDB</h6>
+                        </div>
+                        <div class="col-2" style="width: auto;">
+                          <h6>MySQL</h6>
+                        </div>
+                        <div class="col-2" style="width: auto;">
+                          <h6>Javascript</h6>
+                        </div>
+                        <div class="col-2" style="width: auto;">
+                          <h6>PHP</h6>
+                        </div>
+                        <div class="col-2" style="width: auto;">
+                          <h6>Redis</h6>
+                        </div>
+                        <div class="col-2" style="width: auto;">
+                          <h6>Jquery</h6>
+                        </div>
+                      </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <div class="row">
+                <div class="col-md-6  col-sm-12 p-box col-12 d-flex justify-content-center align-items-center">
+                  <div class="img-box">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#todo" > <img src="./assets/todo.png" class="project-img "
+                      style="width:90%; " alt=""></a>
+                   
+                    <div class="modal fade " id="todo" data-bs-backdrop="static" data-bs-keyboard="false"
+                      aria-labelledby="todo" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content  ">
+                          <div class="row mt-2 ms-2  ">
+                            <div class="col-10">
+                              <h1 class="modal-title fs-5" id="staticBackdropLabel">Todo WebApplication</h1>
+                            </div>
+                            <div class="col-2">
+                              <button type="button" class="btn-close   me-2" data-bs-dismiss="modal" aria-label="Close"
+                                style="float: right;"></button>
+                            </div>
+                          </div>
+                          <div class="modal-body row d-flex justify-content-center align-items-center ">
+                            <div class=" col-12 d-flex justify-content-center align-items-center ">
+                              <a href="https://github.com/SATHYASEELAN-S/todo-webapplication" class="btn btn-repo p-4 "><i
+                                  class="fa-brands fa-square-github fa-bounce me-1 fa-2xl"></i> Githb Repo</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6  col-sm-12 p-box d-flex justify-content-start align-items-start"
+                  style="flex-direction: column;">
+                  <div class="box-project col-lg-10  col-sm-10  col-md-10 col-12">
+                    <h5>Todo webApplication</h5>
+                    <p>A Todo web application provides users can create, edit, prioritize, and delete tasks through an
+                      intuitive and user-friendly interface.</p>
+
+
+                      <div class="tech-used row d-flex  ">
+                        <div class="col-2" style="width: auto;">
+                          <h6>CSS</h6>
+                        </div>
+                        <div class="col-2" style="width: auto;">
+                          <h6>HTML</h6>
+                        </div>
+                        <div class="col-2" style="width: auto;">
+                          <h6>Bootstrap5</h6>
+                        </div>
+                        <div class="col-2" style="width: auto;">
+                          <h6>Python</h6>
+                        </div>
+                        <div class="col-2" style="width: auto;">
+                          <h6>Django</h6>
+                        </div>
+                        <div class="col-2" style="width: auto;">
+                          <h6>MySQL</h6>
+                        </div>
+                      </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
       </div>
+
+
     </div>
   </section>
 
@@ -122,8 +369,8 @@
         <div class="col-text text-center ">
           <h1 class="headline">Education</h1>
         </div>
-        <div class="col-12 col-1 col-box d-flex justify-content-end">
-          <div class="col-lg-6  ed-box col-1 col-md-6 col-12 d-flex justify-content-center align-items-center   ">
+        <div class="col-12 col-box d-flex justify-content-end">
+          <div class="col-lg-6  ed-box col1 col-md-6 col-12 d-flex justify-content-center align-items-center   ">
             <div class="box  d-flex justify-content-start align-items-start  " style="flex-direction: column;">
               <div class="row pt-3 ps-3  skil-row  w-100  d-flex align-items-end ">
                 <div class="text-start  col-5">
@@ -145,7 +392,7 @@
           </div>
         </div>
         <div class="col-12 col-box d-flex justify-content-start ">
-          <div class="col-lg-6  ed-box col-1 col-md-6 col-12 d-flex justify-content-center align-items-center   ">
+          <div class="col-lg-6  ed-box col1 col-md-6 col-12 d-flex justify-content-center align-items-center   ">
             <div class="box  d-flex justify-content-start align-items-start  " style="flex-direction: column;">
               <div class="row pt-3 ps-3  skil-row  w-100  d-flex align-items-end ">
                 <div class="text-start  col-9">
@@ -167,7 +414,7 @@
           </div>
         </div>
         <div class="col-12 col-box d-flex justify-content-end">
-          <div class="col-lg-6  ed-box col-1 col-md-6 col-12 d-flex justify-content-center align-items-center   ">
+          <div class="col-lg-6  ed-box col1 col-md-6 col-12 d-flex justify-content-center align-items-center   ">
             <div class="box  d-flex justify-content-start align-items-start  " style="flex-direction: column;">
               <div class="row pt-3 ps-3  skil-row  w-100  d-flex align-items-end ">
                 <div class="text-start  col-5">
@@ -190,7 +437,7 @@
         </div>
 
         <div class="col-12 col-box col-4 d-flex justify-content-start">
-          <div class="col-lg-6  ed-box col-1 col-md-6 col-12 d-flex justify-content-center align-items-center   ">
+          <div class="col-lg-6  ed-box col1 col-md-6 col-12 d-flex justify-content-center align-items-center   ">
             <div class="box  d-flex justify-content-start align-items-start  " style="flex-direction: column;">
               <div class="row pt-3 ps-3  skil-row  w-100  d-flex align-items-end ">
                 <div class="text-start  col-5">
@@ -216,93 +463,93 @@
   </section>
   <section id="skill">
     <div class="container-fluid skill-container d-flex justify-content-center align-items-center vh-100 ">
-      <div class="skill-content w-100 d-flex justify-content-center align-items-center  h-75 ">
-        <div class="skill-row w-100 d-flex justify-content-center align-items-center   gx-4  row">
+      <div class="skill-content w-100 d-flex justify-content-center align-items-start h-75 ">
+        <div class="skill-row w-100 d-flex justify-content-center align-items-start  gx-4  row">
           <div class="col-12 skill text-center ">
             <h1 class="headline">Skills</h1>
           </div>
-          
-          
-            <div class="col-1 " style="width: auto;"> 
-              <div class="skill-box bg-white">
-                <div class="skill-text d-flex " style="flex-direction: row;">
-                  <div class="fa mt-2  me-3 ">
-                    <i class="fa-brands fa-css3 fa-2xl"></i>
-                  </div>
-                  <h4 class="text-start ">CSS</h4>
+
+
+          <div class="col-1 " style="width: auto;">
+            <div class="skill-box bg-white">
+              <div class="skill-text d-flex " style="flex-direction: row;">
+                <div class="fa mt-1  me-3 ">
+                  <i class="fa-brands fa-css3 fa-2xl"></i>
                 </div>
+                <h4 class="text-start ">CSS</h4>
               </div>
             </div>
-     
-          
-            <div class="col-2">
-              <div class="skill-box bg-white">
-                <div class="skill-text d-flex " style="flex-direction: row;">
-                  <div class="fa mt-2  me-3 ">
-                    <i class="fa-brands fa-bootstrap fa-2xl"></i>
-                  </div>
-                  <h4 class="text-start ">Bootstrap</h4>
-                </div>
-                
-              </div>
-         
           </div>
-          
-            <div class="col-2">
-              <div class="skill-box bg-white">
-                <div class="skill-text d-flex " style="flex-direction: row;">
-                  <div class="fa mt-2  me-3 ">
-                    <i class="fa-brands fa-python fa-2xl"></i>
-                  </div>
-                  <h4 class="text-start ">Python</h4>
-                </div>
-              
-              </div>
-            </div>
-            
-            <div class="col-2 ">
-                <div class="skill-box bg-white">
-                  <div class="skill-text d-flex " style="flex-direction: row;">
-                    <div class="fa mt-2  me-3 ">
-                      <i class="fa-brands fa-c fa-2xl"></i>
-                    </div>
-                    <h4 class="text-start ">C Programming</h4>
-                  </div>
-                </div>
-              </div>
-         
-         
-            <div class="col-2">
-              <div class="skill-box bg-white">
-                <div class="skill-text d-flex " style="flex-direction: row;">
-                  <div class="fa mt-2  me-3 ">
-                    <i class="fa-solid fa-code fa-2xl"></i>
 
-                  </div>
-                  <h4 class="text-start ">Django</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-1">
-              <div class="skill-box bg-white">
-                <div class="skill-text d-flex " style="flex-direction: row;">
-                  <div class="fa mt-2  me-3 ">
-                    <i class="fa-solid fa-database fa-2xl"></i>
 
-                  </div>
-                  <h4 class="text-start ">SQL</h4>
+          <div class="col-2">
+            <div class="skill-box bg-white">
+              <div class="skill-text d-flex " style="flex-direction: row;">
+                <div class="fa mt-1  me-3 ">
+                  <i class="fa-brands fa-bootstrap fa-2xl"></i>
                 </div>
+                <h4 class="text-start ">Bootstrap</h4>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-2">
+            <div class="skill-box bg-white">
+              <div class="skill-text d-flex " style="flex-direction: row;">
+                <div class="fa mt-1  me-3 ">
+                  <i class="fa-brands fa-python fa-2xl"></i>
+                </div>
+                <h4 class="text-start ">Python</h4>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-2 ">
+            <div class="skill-box bg-white">
+              <div class="skill-text d-flex " style="flex-direction: row;">
+                <div class="fa mt-1  me-3 ">
+                  <i class="fa-brands fa-c fa-2xl"></i>
+                </div>
+                <h4 class="text-start ">C Programming</h4>
               </div>
             </div>
+          </div>
+
+
+          <div class="col-2">
+            <div class="skill-box bg-white">
+              <div class="skill-text d-flex " style="flex-direction: row;">
+                <div class="fa mt-1  me-3 ">
+                  <i class="fa-solid fa-code fa-2xl"></i>
+
+                </div>
+                <h4 class="text-start ">Django</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="skill-box bg-white">
+              <div class="skill-text d-flex " style="flex-direction: row;">
+                <div class="fa mt-1 me-3 ">
+                  <i class="fa-solid fa-database fa-2xl"></i>
+
+                </div>
+                <h4 class="text-start ">SQL</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <section id="contact">
-    <div class="container-fluid contact-container vh-100 d-flex justify-content-center align-items-start">
-      <div class="contact-content d-flex w-75 justify-content-center  align-items-start">
-        <div class="row contact-row w-75 d-flex justify-content-center  align-items-start">
+    <div class="container-fluid contact-container vh-100 d-flex justify-content-center align-items-center">
+      <div class="contact-content d-flex w-75 justify-content-center  align-items-center">
+        <div class="row contact-row w-75 d-flex justify-content-center  align-items-center">
           <div class="contact-col text-center mb-5">
             <h1 class="headline">Contact</h1>
           </div>
@@ -324,7 +571,7 @@
   </section>
 
 
-  
+
   <script type="text/javascript">
     (function () {
       emailjs.init({
@@ -333,5 +580,7 @@
     })();
   </script>
 
+
+  <script src="./js/action.js"></script>
 
 </body>
