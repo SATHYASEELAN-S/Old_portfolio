@@ -282,6 +282,9 @@ color: #0E2431;
         display: flex;
         justify-content: center !important;
     }
+    .btn-repo{
+        margin-top: 10px;
+    }
 }
 
 @media (max-width:768px ) and (min-width:577px) {
