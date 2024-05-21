@@ -192,9 +192,25 @@ color: #0E2431;
   
     
 }
-.img{
-    border-radius: 20px;
+.img {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: primary;
 }
+
+.img .img-fluid {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left; 
+}
+
 /************** me************************** */
 
 
