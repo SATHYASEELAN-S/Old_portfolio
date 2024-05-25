@@ -37,6 +37,24 @@ function sendMail() {
 
 }
 
+function sendmail() {
+
+
+  var name = "Resume Downloaded" ;
+  var email ="sathyaseelan.ed@gmail.com" ;
+  var message = "Someone has downloaded" ;
+
+    var params = {
+      name, email, message,
+    };
+    const serviceID = "service_wrxxp1o";
+    const templateID = "template_a5kcq0s";
+    emailjs
+      .send(serviceID, templateID, params)
+}
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   var navbar = document.querySelector('.navbar');
 
