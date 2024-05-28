@@ -53,13 +53,17 @@ body{
     background-color: #4070f4;
     padding: 10px 0; 
 }
-
-.navbar.scrolled .nav-link , .navbar.scrolled  .navbar-brand {
+.navbar.scrolled  .navbar-brand {
     color: white;
     transform: translateY(-3px); 
 }
-
-
+@media (min-width:576px)
+{
+    .navbar.scrolled .nav-link , .navbar.scrolled  .navbar-brand {
+        color: white;
+        transform: translateY(-3px); 
+    }
+}
 .navbar-brand {
     font-size: 30px;
         color: #4070f4;
@@ -599,5 +603,4 @@ color: #0E2431;
     font-size: 1.30rem !important;
 
 }
-
 

@@ -15,3 +15,21 @@ $(document).ready(function () {
     $(this).addClass("underline-text");
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+  
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      var offcanvasNavbar = document.getElementById('offcanvasNavbar');
+      var offcanvasNavbarInstance = bootstrap.Offcanvas.getInstance(offcanvasNavbar);
+      offcanvasNavbarInstance.hide();
+      navLinks.forEach(function(link) {
+        link.classList.remove('active');
+      });
+      this.classList.add('active');
+    });
+  });
+});
